@@ -287,5 +287,23 @@
   <ItemGroup>
     <BundleResource Include="Resources\wind.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\homeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Logouticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\VeryBasicAbouticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WeatherPartlyCloudyRainicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\addressbookicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\VeryBasicMenuicon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

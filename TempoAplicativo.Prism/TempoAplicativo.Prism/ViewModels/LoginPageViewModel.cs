@@ -79,7 +79,7 @@ namespace TempoAplicativo.Prism.ViewModels
                 {
                     IsRunning = false;
                     await App.Current.MainPage.DisplayAlert("Bem Vindo:", email.FirstName + " " + email.LastName, "Ok");
-                    await NavigationService.NavigateAsync($"/NavigationPage/{nameof(TempoLocalPage)}");
+                    await NavigationService.NavigateAsync($"/{nameof(TempoAplicativoMasterDetailPage)}/NavigationPage/{nameof(TempoLocalPage)}");
 
                 }
                 else

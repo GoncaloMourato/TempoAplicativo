@@ -29,6 +29,7 @@ namespace TempoAplicativo.Prism
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<TempoLocalPage, TempoLocalPageViewModel>();
+            containerRegistry.RegisterForNavigation<TempoAplicativoMasterDetailPage, TempoAplicativoMasterDetailPageViewModel>();
         }
     }
 }
