@@ -305,5 +305,8 @@
   <ItemGroup>
     <BundleResource Include="Resources\VeryBasicMenuicon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\backg.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

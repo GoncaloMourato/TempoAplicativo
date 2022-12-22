@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TempoAplicativo.Prism.Views.ContactPage"
+             Background="#7d65a8">
+
+    <Frame Grid.Row="1" Margin="20,30" BorderColor="# " HasShadow="True"  CornerRadius="30" >
+        <StackLayout Padding="10">
+            <Label Text="If you need something here is our email : tempoaplicativo@gmail.com." TextColor="Black" Margin="20"/>
+            <Label Text="We are a mobile application developed to inform about the weather." TextColor="Black"/>
+            <Label Text="You can search for the city/country you want and find out the time and temperature you will be in." TextColor="Black"/>
+
+        </StackLayout>
+    </Frame>
+
+
+</ContentPage>

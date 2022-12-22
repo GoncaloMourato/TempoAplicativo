@@ -8,7 +8,7 @@
     <MasterDetailPage.Master>
         <ContentPage
             Title="Menu"
-            BackgroundColor="#eee"
+            BackgroundColor="#7d65a8"
             IconImageSource="VeryBasicMenuicon">
 
             <ContentPage.Padding>

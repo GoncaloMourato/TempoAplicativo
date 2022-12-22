@@ -36,6 +36,18 @@ namespace TempoAplicativo.Prism.ViewModels
                 },
                 new Menu
                 {
+                    Icon = "addressbookicon",
+                    PageName = $"{nameof(ContactPage)}",
+                    Title = "Contact Us"
+                },
+                new Menu
+                {
+                    Icon = "VeryBasicAbouticon",
+                    PageName = $"{nameof(AboutPage)}",
+                    Title = "About Us"
+                },
+                new Menu
+                {
                     Icon = "Logouticon",
                     PageName = $"{nameof(LoginPage)}",
                     Title = "Logout"

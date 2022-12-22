@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="TempoAplicativo.Prism.Views.TempoLocalPage">
+             x:Class="TempoAplicativo.Prism.Views.TempoLocalPage"
+             Shell.NavBarIsVisible="False">
 
 
 
@@ -21,12 +22,12 @@
             </Grid.RowDefinitions>
             
             <BoxView Grid.RowSpan="2" BackgroundColor="#7585BA" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-            <Image x:Name="bgImg" Aspect="AspectFill" Grid.RowSpan="2" Source="bg.png" Opacity="0.5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Image x:Name="bgImg" Aspect="AspectFill" Grid.RowSpan="2" Source="backg.jpg" Opacity="0.5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <Image Aspect="AspectFill" Grid.RowSpan="2" Source="overlay.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             <!-- <ImageButton Source="menu.png" Margin="20" WidthRequest="23" HeightRequest="15" HorizontalOptions="Start" VerticalOptions="Center" /> -->
             <Picker x:Name="picker"
-        Title="Select a monkey"
-        TitleColor="Red" SelectedIndexChanged="picker_SelectedIndexChanged">
+        Title="Select a City"
+        TitleColor="Black" SelectedIndexChanged="picker_SelectedIndexChanged">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Lisbon</x:String>
@@ -112,47 +113,43 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Grid BackgroundColor="#76b5c5" Opacity="0.4">
+            <Grid BackgroundColor="#4d3873" Opacity="0.4">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Label x:Name="dayOneTxt" Text="Sunday" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
                     <Label x:Name="dateOneTxt" Margin="0,-5,0,0" Text="02 Dec" TextColor="White" FontSize="10" HorizontalOptions="Center"/>
                     <Image x:Name="iconOneImg" Source="cloud.png" Margin="0,20" WidthRequest="30" HeightRequest="22"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="0">
                         <Label  x:Name="tempOneTxt" Text="17" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
-                        <Label Text="º" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
             </Grid>
-            <Grid BackgroundColor="#76b5c5" Opacity="0.6" Grid.Column="1">
+            <Grid BackgroundColor="#4d3873" Opacity="0.6" Grid.Column="1">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Label x:Name="dayTwoTxt" Text="Monday" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
                     <Label x:Name="dateTwoTxt" Margin="0,-5,0,0" Text="03 Dec" TextColor="White" FontSize="10" HorizontalOptions="Center"/>
                     <Image x:Name="iconTwoImg" Source="cloud.png" Margin="0,20" WidthRequest="30" HeightRequest="22"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="0">
                         <Label x:Name="tempTwoTxt" Text="17" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
-                        <Label Text="º" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
             </Grid>
-            <Grid BackgroundColor="#76b5c5" Opacity="0.8" Grid.Column="2">
+            <Grid BackgroundColor="#4d3873" Opacity="0.8" Grid.Column="2">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Label x:Name="dayThreeTxt" Text="Tuesday" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
                     <Label x:Name="dateThreeTxt" Margin="0,-5,0,0" Text="04 Dec" TextColor="White" FontSize="10" HorizontalOptions="Center"/>
                     <Image x:Name="iconThreeImg" Source="cloud.png" Margin="0,20" WidthRequest="30" HeightRequest="22"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="0">
                         <Label x:Name="tempThreeTxt" Text="17" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
-                        <Label Text="º" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
             </Grid>
-            <Grid BackgroundColor="#76b5c5" Grid.Column="3">
+            <Grid BackgroundColor="#4d3873" Grid.Column="3">
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Label x:Name="dayFourTxt" Text="Wednesday" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
                     <Label x:Name="dateFourTxt" Margin="0,-5,0,0" Text="05 Dec" TextColor="White" FontSize="10" HorizontalOptions="Center"/>
                     <Image x:Name="iconFourImg" Source="cloud.png" Margin="0,20" WidthRequest="30" HeightRequest="22"/>
                     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Spacing="0">
-                        <Label x:Name="tempFourTxt" Text="17" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
-                        <Label Text="º" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
+                        <Label x:Name="tempFourTxt" Text="º" TextColor="White" FontSize="23" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
             </Grid>
