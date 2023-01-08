@@ -51,7 +51,7 @@ The mobile app replicate a weather app that give details over the api from https
 - #GitHub
 
 # Authors
-[Gonçalo Mourato](https://github.com/Catia0202)
+[Gonçalo Mourato](https://github.com/GoncaloMourato)
 
 ### How to reach me
 
